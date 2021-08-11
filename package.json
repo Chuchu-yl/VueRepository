@@ -5,13 +5,16 @@
   "author": "lizhichu <lizhichu@hhgroup.cc>",
   "private": true,
   "scripts": {
-    "serve": "cross-env BUILD_ENV=sit vue-cli-service serve",
+    "dev": "cross-env NODE_ENV=dev VUE_APP_BUILD_ENV=dev vue-cli-service serve",
+    "serve": "npm run dev",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@vue/cli-service": "^4.5.13",
+    "cjs": "^0.0.11",
     "cross-env": "^7.0.3",
+    "less-loader": "^6.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.6.2"
@@ -71,7 +74,7 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^2.11.5",
     "webpack-merge": "^4.1.0"
   },
   "engines": {

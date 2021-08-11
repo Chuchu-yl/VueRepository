@@ -45,7 +45,7 @@ module.exports={
     configureWebpack:{
         plugins:[
             new webpack.DefinePlugin({
-                BUILD_ENV: JSON.stringify(process.env.BUILD_ENV),
+                VUE_APP_BUILD_ENV:''
             })
         ]
     }

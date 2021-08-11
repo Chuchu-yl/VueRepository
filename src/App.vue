@@ -8,9 +8,14 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  mounted(){
+    console.log(11111111111,process.env);
+    console.log(22222222222,process.env.VUE_APP_BUILD_ENV);
+  }
 }
 </script>
+
 
 <style>
 #app {
