@@ -1,3 +1,4 @@
+const path = require('path')
 const webpack = require("webpack");
 module.exports={
     /**
@@ -43,11 +44,17 @@ module.exports={
      * vue.config里配置plugin需要使用configureWebpack对象
      */
     configureWebpack:{
+        resolve:{
+            alias:{
+                '@pages':path.join(__dirname,'./src/pages')
+            }
+        },
         plugins:[
             new webpack.DefinePlugin({
                 VUE_APP_BUILD_ENV:''
             })
-        ]
+        ],
+
     }
     
     

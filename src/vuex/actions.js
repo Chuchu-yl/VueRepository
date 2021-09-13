@@ -1,8 +1,12 @@
 // test
-export const increment = ({ commit }) => {
+ const increment = ({ commit }) => {
     commit('INCREMENT')
   }
-  export const decrement = ({ commit }) => {
+ const decrement = ({ commit }) => {
     commit('DECREMENT')
+  }
+  export default{
+    increment,
+    decrement
   }
   
