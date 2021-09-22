@@ -5,9 +5,10 @@
     <div id='wrap'>
       <router-view></router-view>
     </div>
-    <div class="footer">
-      <Footer/>
-    </div>
+    <!-- <div v-if='this.$router.history.current.path!="/Login"' class="footer">
+      
+      <Footer />
+    </div> -->
   </div>
   
 
@@ -21,11 +22,13 @@ export default {
   mounted(){
     console.log(11111111111,process.env);
     console.log(22222222222,process.env.VUE_APP_BUILD_ENV);
+    console.log(this.$router);
   },
   // 在页面中使用组件，需要在components中声明使用！
   components:{
     Footer
-  }
+  },
+
 }
 </script>
 
@@ -43,9 +46,9 @@ body,html{
   color: #2c3e50;
   height: 100%;
 }
-#wrap{
+/* #wrap{
 min-height: calc(100% - 50px);
-}
+} */
 .footer{
   width: 100%;
   height: 50px;
