@@ -17,6 +17,7 @@ import {mapState} from 'vuex'
 </script>
 <style scoped lang="less">
 .first{
+    height: 1000px;
     font-weight: bold;
     height: 100%;
     background-color: rgb(179, 189, 178);
