@@ -9,14 +9,14 @@ import Login from '@pages/Login'
 
 Vue.use(Router)
 
-export default new Router({
+const router= new Router({
   routes: [
     {
       path: '/Login',
       name: '登录',
       component: ()=>import('@pages/Login'),
     },
-    // Home组件相当于底页面
+    // Home组件相当于基础页面
     // 首页路由
     {
       path: '/',
@@ -59,3 +59,5 @@ export default new Router({
     // }
   ]
 })
+
+export default router
