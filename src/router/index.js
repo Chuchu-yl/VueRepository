@@ -16,7 +16,7 @@ export default new Router({
       name: '登录',
       component: ()=>import('@pages/Login'),
     },
-    // Home组件相当于底页面
+    // Home组件相当于基础页面
     // 首页路由
     {
       path: '/',
