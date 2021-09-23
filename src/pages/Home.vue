@@ -40,7 +40,7 @@ min-height: calc(100% - 50px);
     height: 100%;
   #rouercomponents{
   min-height: calc(100% - 50px);
-}
+  }
 }
 
 </style>
