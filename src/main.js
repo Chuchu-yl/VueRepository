@@ -11,7 +11,11 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
-
+router.beforeEach((to,from,next)=>{
+  const isAuthenticated=localStorage.getItem('user')
+  if(to.path!='/Login' && !isAuthenticated) next({path:'/Login'})
+  next()
+})
 new Vue({
   router,
   store,

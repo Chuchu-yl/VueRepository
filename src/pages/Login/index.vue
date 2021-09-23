@@ -23,7 +23,8 @@ export default{
       if(this.passwordvalue!='123456'){
         alert('密码输入错误，请重新输入！')
       }else{
-        this.$router.push('/Home')
+        localStorage.setItem("user",'jiazhuangshiToken')
+        this.$router.push('/firstpage')
         this.$store.dispatch('getLogin')
       }
     },
