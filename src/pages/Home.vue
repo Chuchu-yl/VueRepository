@@ -6,7 +6,7 @@
       <el-container>
       <el-aside v-if="isClose" width="200px">Aside</el-aside>
       <el-container>
-    <el-header @click.native="showAside">Header</el-header>
+    <el-header @click.native="showAside">商城测试</el-header>
      <el-main><router-view></router-view></el-main>
       
     <!-- <el-footer> <Footer /></el-footer> -->
@@ -76,24 +76,24 @@ export default {
     color: #333;
     text-align: center;
     line-height: 60px;
+    font-weight: bold;
   }
   .el-main {
     background-color: #E9EEF3;
     color: #333;
-    text-align: center;
-    line-height: 160px;
+    padding: 0 !important;
   }
   
   .footer{
   width: 100%;
   height: 50px;
-  background-color: pink;
+  background-color: #B3C0D1;
   margin-bottom: -50px;
 }
 .footer2{
   margin-left: -50px;
   width: calc(100% + 50px);
   height: 50px;
-  background-color: pink;
+  background-color: #B3C0D1;
 }
 </style>

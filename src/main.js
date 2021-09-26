@@ -11,6 +11,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
+// 路由守卫，判断是否登录，未登录显示登录页
 router.beforeEach((to,from,next)=>{
   const isAuthenticated=localStorage.getItem('user')
   if(to.path!='/Login' && !isAuthenticated) next({path:'/Login'})

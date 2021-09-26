@@ -1,6 +1,6 @@
 <template v-if='isIfNone'>
     <div class="first">
-    Home
+    <p style="textAlign:left">测试下拉加载</p>
     </div>
 </template>
 <script>
@@ -8,10 +8,8 @@ import {mapState} from 'vuex'
     export default{
         name:'Home',
         computed:{
-            ...mapState(['isLogin'])
         },
         mounted(){
-            console.log(111,this.isLogin);
         }
     }
 </script>
@@ -20,7 +18,7 @@ import {mapState} from 'vuex'
     height: 1000px;
     font-weight: bold;
     height: 100%;
-    background-color: rgb(179, 189, 178);
+    // background-color: rgb(179, 189, 178);
     .text-danger{
         color: red;
     }
